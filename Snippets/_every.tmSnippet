@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>every { |${1:i}tem, $1|
+	<string>.every { |${1:i}tem, $1|
 	$2
 };</string>
 	<key>name</key>
