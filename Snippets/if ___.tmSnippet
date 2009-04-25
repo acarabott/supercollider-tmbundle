@@ -9,7 +9,7 @@
 	${3:false}
 };</string>
 	<key>name</key>
-	<string>if ...</string>
+	<string>ife ...</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
