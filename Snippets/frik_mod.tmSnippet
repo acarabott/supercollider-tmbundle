@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* 
+        description: this is a $1... 
+*/ 
+SynthDef(\xxxx_mod_template, {|out= 0, in= 0, mix= 1, 
+        freq= 400| 
+        var src, efx; 
+        src= In.ar(in, 1); 
+        efx= src*SinOsc.ar(freq); 
+        ReplaceOut.ar(out, XFade2.ar(src, efx, mix)); }).memStore; 
+/* 
+        example: 
+        b= Synth(\xxxx_mod_template); 
+        a= Synth(\xxxx_gen_template); 
+        b.set(\freq, 5); 
+        b.set(\mix, 0);	 //-1= dry, 1= wet 
+        b.free; 
+        a.set(\gate, 0);	
+*/ </string>
+	<key>name</key>
+	<string>frik_mod</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>f_mod</string>
+	<key>uuid</key>
+	<string>68C2AAE6-3C4A-47AE-82A2-8931BFE6D3F7</string>
+</dict>
+</plist>

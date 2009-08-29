@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* 
+        description: this is a $1... 
+*/ 
+SynthDef(\xxxx_gen_template, {|out= 0, gate= 1, amp= 1, 
+        freq= 400| 
+        var src, env; 
+        env= EnvGen.kr(Env.asr(0.1, 1, 0.5), gate, doneAction:2); 
+        src= SinOsc.ar(freq, 0, amp); 
+        Out.ar(out, src*env); 
+}).memStore; 
+/* 
+        example: 
+        a= Synth(\xxxx_gen_template); 
+        a.set(\freq, 500); 
+        a.set(\gate, 0); 
+*/ </string>
+	<key>name</key>
+	<string>frik_gen</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>f_gen</string>
+	<key>uuid</key>
+	<string>258340E5-5A7C-4301-A331-BC8701DF6F37</string>
+</dict>
+</plist>
