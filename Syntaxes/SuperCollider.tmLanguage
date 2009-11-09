@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>sc</string>
+		<string>scd</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>\{|\/\*</string>
