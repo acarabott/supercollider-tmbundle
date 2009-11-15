@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>sc</string>
+		<string>scd</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>\{|\/\*</string>
@@ -124,7 +125,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\~[a-zA-Z0-9]+</string>
+			<string>\~[a-zA-Z0-9_]+</string>
 			<key>name</key>
 			<string>variable.language.supercollider</string>
 		</dict>

@@ -3,16 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>any { |item, i|
-	$1
-};</string>
+	<string>.class.findRespondingMethodFor(\\${1:ar}).argNames;
+</string>
 	<key>name</key>
-	<string>any ...</string>
+	<string>UGen Args</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>any</string>
+	<string>.uargs</string>
 	<key>uuid</key>
-	<string>DF09CE07-5704-4932-8DC7-86A1ECE54401</string>
+	<string>196801F7-D3E6-4778-9F10-9CD590245C74</string>
 </dict>
 </plist>
