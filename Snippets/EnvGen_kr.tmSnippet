@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>EnvGen.kr(${1:env}, doneAction: ${2:2})</string>
+	<string>EnvGen.${1:a}r(${2:env}, doneAction: ${3:2})</string>
 	<key>name</key>
 	<string>EnvGen.kr</string>
 	<key>scope</key>
