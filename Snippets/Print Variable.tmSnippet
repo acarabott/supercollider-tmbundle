@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Post &lt;&lt; "$TM_SELECTED_TEXT: " &lt;&lt;  $TM_SELECTED_TEXT &lt;&lt; "\n"; 
-</string>
+	<string>"$TM_SELECTED_TEXT: ".post; $TM_SELECTED_TEXT.postln;</string>
 	<key>keyEquivalent</key>
 	<string>~@p</string>
 	<key>name</key>
