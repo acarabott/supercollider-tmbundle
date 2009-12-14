@@ -78,6 +78,8 @@ SC3Controller {
         matePath = whichMate;
       };
       
+      matePath = matePath.replace("\n", "");
+      
       StartUp.add {
         this.addListeners;
       }
