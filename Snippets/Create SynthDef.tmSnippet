@@ -3,9 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>SynthDef(\\${1:foobar}) { |${2:out=0}$3|
-	$0
-}.play(s);</string>
+	<string>SynthDef(\\${1:foobar}, { 
+	|${2:out=0}$3, gate=1|
+	var env = Linen.kr(gate, 0.01, 1, 0.01, 2);
+	var snd;
+	
+	snd = $0;
+	snd = snd * env;
+	Out.ar(out, snd);
+}).memStore;</string>
 	<key>name</key>
 	<string>Create SynthDef</string>
 	<key>scope</key>
