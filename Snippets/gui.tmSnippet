@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>(
 var w, wWidth, wHeight;
-var sl, width, height;
+var width, height;
 
 wWidth = ${1:300};
 wHeight = ${2:300};
@@ -15,7 +15,8 @@ height = 20;
 
 w = Window("${3:a gui}", Rect(128, 64, wWidth, wHeight));
 w.addFlowLayout; 
-sl = EZSlider(w, width@height, "slid", \freq, { |v| 
+
+EZSlider(w, width@height, "slid", \freq, { |v| 
     ${4:v.value.postln; // action} 
 });
 
