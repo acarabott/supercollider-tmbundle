@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby -wKU
+require File.dirname(__FILE__) + '/../lib/sc'
+require 'optparse'
+
+options = {}
+
+d = SC::Dispatcher.new
+
+OptionParser.new do |opts|
+   opts.banner = "Usage: sc_dispatcher.rb [options]"
+   opts.separator "----"
+   
+   opts.on("-i <sc_code>", "Interpret SC Code") do |sc_code|
+     d.interpret(sc_code)
+   end
+   
+   opts.on_tail("-h", "--help", "Show this message") do
+     puts opts
+     exit
+   end
+
+end.parse!

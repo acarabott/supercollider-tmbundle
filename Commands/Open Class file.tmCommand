@@ -4,9 +4,6 @@
 <dict>
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
-	<key>command</key>
-	<string>require_cmd sc3c
-sc3c -j $TM_SELECTED_TEXT</string>
 	<key>fallbackInput</key>
 	<string>none</string>
 	<key>input</key>

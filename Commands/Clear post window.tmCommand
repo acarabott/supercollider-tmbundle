@@ -5,8 +5,10 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>require_cmd sc3c
-sc3c -c</string>
+	<string>#!/usr/bin/env ruby -wKU
+
+CLEAR = `clear`
+print CLEAR</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
