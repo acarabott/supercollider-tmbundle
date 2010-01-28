@@ -5,10 +5,9 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>require_cmd sc_dispatcher
+	<string>require_cmd sc3c
 export SC_INTERPRET_TEXT="${TM_SELECTED_TEXT:-$TM_CURRENT_LINE}"
-
-sc_dispatcher -i SC_INTERPRET_TEXT;</string>
+sc3c -x SC_INTERPRET_TEXT;</string>
 	<key>fallbackInput</key>
 	<string>line</string>
 	<key>input</key>
