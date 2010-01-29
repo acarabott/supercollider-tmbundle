@@ -8,9 +8,9 @@
 		<string>scd</string>
 	</array>
 	<key>foldingStartMarker</key>
-	<string>\{|\/\*</string>
+	<string>\{|\/\*|\(</string>
 	<key>foldingStopMarker</key>
-	<string>\}|\*\/</string>
+	<string>\}|\*\/|\)</string>
 	<key>keyEquivalent</key>
 	<string>^~S</string>
 	<key>name</key>
