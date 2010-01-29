@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>require_cmd sc3c
+export SC_INTERPRET_TEXT="${TM_SELECTED_TEXT:-$TM_CURRENT_LINE}"
+sc3c -x SC_INTERPRET_TEXT;</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^`</string>
+	<key>name</key>
+	<string>Interpret One Hander</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>uuid</key>
+	<string>72574AAB-EBB4-4DBE-A510-970335586095</string>
+</dict>
+</plist>
