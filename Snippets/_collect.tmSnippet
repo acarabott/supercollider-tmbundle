@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>.collect({|${1:i}tem, $1| $2 })
-</string>
+	<string>.collect({|${1:i}tem, $1| $2 })</string>
 	<key>name</key>
 	<string>.collect</string>
 	<key>scope</key>
