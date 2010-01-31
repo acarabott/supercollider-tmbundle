@@ -6,7 +6,7 @@
 	<string>try {
 	"success".postln;
 } {|error|
-	"fail".posln;
+	"fail".postln;
 }
 </string>
 	<key>name</key>
