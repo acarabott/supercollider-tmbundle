@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>"$TM_SELECTED_TEXT: ".post; ($TM_SELECTED_TEXT).postln;</string>
-	<key>keyEquivalent</key>
-	<string>~@p</string>
+	<string>Task {
+	$1
+	${2:1}.wait;
+};</string>
 	<key>name</key>
-	<string>Print Variable</string>
+	<string>Task</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>task</string>
 	<key>uuid</key>
-	<string>C94CF802-251A-44FE-87CB-4C50FA4D4D02</string>
+	<string>C3A8186C-A802-4467-9B4B-08B17DB75DAC</string>
 </dict>
 </plist>
