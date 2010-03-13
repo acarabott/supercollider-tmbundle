@@ -130,8 +130,10 @@
 			<string>variable.language.supercollider</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>\/\/.*</string>
+			<key>begin</key>
+			<string>//</string>
+			<key>end</key>
+			<string>$\n?</string>
 			<key>name</key>
 			<string>comment.single.supercollider</string>
 		</dict>
