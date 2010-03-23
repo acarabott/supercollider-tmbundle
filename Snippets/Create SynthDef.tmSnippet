@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>SynthDef(\\${1:foobar}) { |${2:out=0}$3|
 	$0
-	}.load(s);</string>
+}.load(s);</string>
 	<key>name</key>
 	<string>Create SynthDef</string>
 	<key>scope</key>
