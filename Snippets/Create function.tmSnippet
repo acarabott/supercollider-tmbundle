@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>{ |${1:arg=value}|
-	$2			
-</string>
+	<string>{ |${1:arg=value}| $2</string>
 	<key>name</key>
 	<string>Create function</string>
 	<key>scope</key>
