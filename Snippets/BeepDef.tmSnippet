@@ -3,14 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Synth(\beep, [\freq, ${1:440}, \amp, ${2:0.5}, \pan, ${3:0}, \out, ${4:0}]);</string>
+	<string>SynthDef(\beep) { |out=0, freq=440, amp=0.1, pan=0|
+	var sig = SinOsc.ar(freq, 0, amp);
+	var env = EnvGen.ar(Env.new([0,1,0,],[0.01,0.2]));
+	
+	Out.ar(out,
+		Pan2.ar(sig*env, pan);
+	);
+}.load(s);
+</string>
 	<key>name</key>
-	<string>Beep</string>
+	<string>BeepDef</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>beep</string>
+	<string>beepdef</string>
 	<key>uuid</key>
-	<string>FEB81372-B043-4426-A6A2-B65A47AB97A0</string>
+	<string>043CA2C4-F0A8-4915-A93A-40B645D6B946</string>
 </dict>
 </plist>
