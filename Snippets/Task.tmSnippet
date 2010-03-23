@@ -4,8 +4,10 @@
 <dict>
 	<key>content</key>
 	<string>Task {
-	$1
-	${2:1}.wait;
+	${1:inf}.do {|${3:i}|
+		$4
+		${5:1}.wait;
+	};
 };</string>
 	<key>name</key>
 	<string>Task</string>
