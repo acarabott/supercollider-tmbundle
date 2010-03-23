@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>try {
-	"success".postln;
+	//code
 } {|error|
 	"fail".postln;
 }
