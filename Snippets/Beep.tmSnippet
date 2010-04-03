@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Synth(\beep, [\freq, ${1:440}, \amp, ${2:0.5}, \pan, ${3:0}, \out, ${4:0}]);</string>
+	<string>Synth(\beep, [\freq, ${1:440}, \amp, ${2:0.2}, \pan, ${3:0}, \out, ${4:0}]);</string>
 	<key>name</key>
 	<string>Beep</string>
 	<key>scope</key>

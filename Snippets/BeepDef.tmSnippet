@@ -4,8 +4,10 @@
 <dict>
 	<key>content</key>
 	<string>SynthDef(\beep) { |out=0, freq=440, amp=0.1, pan=0|
-	var sig = SinOsc.ar(freq, 0, amp);
+	var saw = LFSaw.ar(freq, 0, amp/3);
+	var sin = SinOsc.ar(freq, 0, amp);
 	var env = EnvGen.ar(Env.new([0,1,0,],[0.01,0.2]), doneAction:2);
+	var sig = Mix.new([saw, sin]);
 	
 	Out.ar(out,
 		Pan2.ar(sig*env, pan);
