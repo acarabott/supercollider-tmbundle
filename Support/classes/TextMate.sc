@@ -162,7 +162,13 @@ SC3Controller {
       nodes.add(node);
 
       node = OSCresponderNode(NetAddr("localhost", nil), '/sc3ctrl/stop') { |t, r, msg|
-        thisProcess.stop; nil;
+		if(Server.default == Server.internal) {
+			{
+				thisProcess.stop; nil;				
+			}.fork(AppClock);
+		} {
+	        thisProcess.stop; nil;			
+		};
       }.add;
       nodes.add(node);
     
