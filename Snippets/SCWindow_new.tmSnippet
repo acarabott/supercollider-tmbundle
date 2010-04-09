@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>SCWindow("${1:window title}", Rect(${2:x}, ${3:y}, ${4:width}, ${5:height}));</string>
+	<string>w = Window("${1:window title}", Rect(${2:100}, ${3:100}, ${4:400}, ${5:300}));</string>
 	<key>name</key>
 	<string>SCWindow.new</string>
 	<key>scope</key>

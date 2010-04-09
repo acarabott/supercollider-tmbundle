@@ -3,21 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>SynthDef(\\${1:foobar}, { 
-	|${2:out=0}$3, gate=1|
-	var env = Linen.kr(gate, 0.01, 1, 0.01, 2);
-	var snd;
-	
-	snd = $0;
-	XOut.ar(out, env, snd);
-}).add;</string>
+	<string>Ndef(${1:\fooBar}, {
+
+}).play;</string>
 	<key>name</key>
-	<string>Create SynthDef</string>
+	<string>Ndef</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>sdef</string>
+	<string>nd</string>
 	<key>uuid</key>
-	<string>99EFA3F0-FDE6-4209-BED6-E051109CC51A</string>
+	<string>51A06BAF-8F45-4597-9418-466903EDDFAF</string>
 </dict>
 </plist>
