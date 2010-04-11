@@ -8,7 +8,7 @@
     \instrument, ${2:\bar},
     \dur, 1
   )
-).play</string>
+).play;</string>
 	<key>name</key>
 	<string>Pdef</string>
 	<key>scope</key>

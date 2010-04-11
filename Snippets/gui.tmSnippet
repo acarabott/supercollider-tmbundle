@@ -4,21 +4,12 @@
 <dict>
 	<key>content</key>
 	<string>(
-var w, wWidth, wHeight;
-var width, height;
+var w;
 
-wWidth = ${1:300};
-wHeight = ${2:300};
-
-width = wWidth - 20;
-height = 20;
-
-w = Window("${3:a gui}", Rect(128, 64, wWidth, wHeight));
+w = Window("${3:a gui}", Rect(128, 64, 300, 300));
 w.addFlowLayout; 
 
-EZSlider(w, width@height, "slid", \freq, { |v| 
-    ${4:v.value.postln; // action} 
-});
+${0:// add gui code}
 
 w.front;
 w.onClose = {  };

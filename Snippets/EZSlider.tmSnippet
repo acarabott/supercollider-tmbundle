@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>w.view.decorator = FlowLayout(w.view.bounds);</string>
+	<string>EZSlider(w, ${1:280@20}, "${2:slider}", ${3:\freq}, 
+	{|v| $4});</string>
 	<key>name</key>
-	<string>FlowLayout</string>
+	<string>EZSlider</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>flow</string>
+	<string>slider</string>
 	<key>uuid</key>
-	<string>2C468C9B-66BB-40C6-B845-E2360D4717B4</string>
+	<string>2D27447D-2DD7-44B8-BBE0-62EB170E4344</string>
 </dict>
 </plist>
