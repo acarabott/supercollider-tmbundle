@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Button(${1:parent}, Rect(${2:0},${3:0},${4:20},${5:20}))
+	<string>Button(${1:parent}, ${2:Rect(${3:0},${4:0},${5:20},${6:20})})
 	.states_([
-		["${6:State 0}", Color.${7:black}, Color.${8:white}],
-		${9:["${10:State 1}", Color.${11:black}, Color.${12:white}]}
+		["${7:State 0}", Color.${8:black}, Color.${9:white}],
+		${10:["${11:State 1}", Color.${12:black}, Color.${13:white}]}
 	])
-	.action_({|${13:butt}|
-		${14:${13:butt}.value.postln;}	
+	.action_({|${14:butt}|
+		${15:${14:butt}.value.postln;}	
 	});</string>
 	<key>name</key>
 	<string>Button</string>
