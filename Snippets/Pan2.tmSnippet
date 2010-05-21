@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Pan2.ar($0:sig, $1:0);</string>
+	<string>Pan2.ar(${1:sig}, ${2:0});</string>
 	<key>name</key>
 	<string>Pan2</string>
 	<key>scope</key>
