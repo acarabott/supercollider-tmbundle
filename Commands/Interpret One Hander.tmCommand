@@ -13,7 +13,7 @@ sc3c -x SC_INTERPRET_TEXT;</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>^`</string>
+	<string>$</string>
 	<key>name</key>
 	<string>Interpret One Hander</string>
 	<key>output</key>

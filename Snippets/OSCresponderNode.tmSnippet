@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Buffer.read(${1:s}, "${2:sounds/${3:amen}.${4:wav}}");</string>
+	<string>OSCresponderNode(${1:s.addr}, '${2:/tr}', {|t, r, msg| ${3} }).add</string>
 	<key>name</key>
-	<string>Buffer.read</string>
+	<string>OSCresponderNode</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>buf</string>
+	<string>oscr</string>
 	<key>uuid</key>
-	<string>7BF22058-5A13-443D-9809-BD68A75EAFB3</string>
+	<string>B2D5352D-4A6B-4903-8634-4D71D4D9A53B</string>
 </dict>
 </plist>
