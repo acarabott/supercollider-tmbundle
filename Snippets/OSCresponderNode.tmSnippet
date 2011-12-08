@@ -3,7 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>OSCresponderNode(${1:s.addr}, '${2:/tr}', {|t, r, msg| ${3} }).add</string>
+	<string>OSCresponderNode(${1:s.addr}, '${2:/tr}', {|t, r, msg| }).add;
+o.action_({|t, r, msg|
+	${3}
+});
+</string>
 	<key>name</key>
 	<string>OSCresponderNode</string>
 	<key>scope</key>
